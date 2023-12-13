@@ -7,3 +7,4 @@ lanzando v10 con buckets y dinamodb!!
 SI se quiere terrafonear, mejor.
 # Pin2
 INICIANDO....
+# P-N
