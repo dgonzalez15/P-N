@@ -15,20 +15,12 @@ jobs:
 
       - name: Install Terraform
         uses: hashicorp/setup-terraform@v1
-        
+      
       - name: Terraform init
         run: terraform init
 
       - name: Show Terraform Plan (Optional)
         run: terraform plan
-
-      - name: Confirm Destruction
-        run: |
-          read -p "Do you really want to destroy all resources? (y/n): " confirm
-          if [ "$confirm" != "y" ]; then
-            echo "Aborted destruction."
-            exit 1
-          fi
 
       - name: Terraform destroy
         run: terraform destroy -auto-approve
